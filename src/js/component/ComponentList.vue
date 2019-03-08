@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import StyleguideComponent from '@/component/StyleguideComponent';
+import StyleguideComponent from '@/js/component/StyleguideComponent';
 import { mapGetters } from 'vuex';
 
 export default {
@@ -30,7 +30,7 @@ export default {
 <style lang="scss" scoped>
     .component-list {
         display: grid;
-        grid-row-gap: 1em;
+        grid-row-gap: 2em;
         grid-auto-flow: row dense;
 
         > .component {

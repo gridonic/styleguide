@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import ComponentLoader from '@/service/ComponentLoader';
-import StyleguideStore from '@/store/StyleguideStore';
+import ComponentLoader from '@/js/service/ComponentLoader';
+import StyleguideStore from '@/js/store/StyleguideStore';
 
-jest.mock('@/service/ComponentLoader');
+jest.mock('@/js/service/ComponentLoader');
 
 const components = [
     { name: 'Component A' },

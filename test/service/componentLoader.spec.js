@@ -1,9 +1,9 @@
-import ComponentLoader from '@/service/ComponentLoader';
-import DataFetcher from '@/service/DataFetcher';
-import GlobalConfig from '@/service/GlobalConfig';
+import ComponentLoader from '@/js/service/ComponentLoader';
+import DataFetcher from '@/js/service/DataFetcher';
+import GlobalConfig from '@/js/service/GlobalConfig';
 
-jest.mock('@/service/DataFetcher');
-jest.mock('@/service/GlobalConfig');
+jest.mock('@/js/service/DataFetcher');
+jest.mock('@/js/service/GlobalConfig');
 
 let componentLoader;
 

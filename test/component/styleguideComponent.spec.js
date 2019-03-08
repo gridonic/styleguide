@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils';
 
-import StyleguideComponent from '@/component/StyleguideComponent.vue';
+import StyleguideComponent from '@/js/component/StyleguideComponent.vue';
 
 describe('StyleguideComponent', () => {
     const build = () => {

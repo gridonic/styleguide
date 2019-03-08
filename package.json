@@ -9,7 +9,7 @@
   },
   "homepage": "https://github.com/gridonic/styleguide#readme",
   "repository": "https://github.com/gridonic/styleguide.git",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "gridonic dev",
     "build": "gridonic build",

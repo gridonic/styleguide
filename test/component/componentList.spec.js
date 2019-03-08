@@ -1,8 +1,8 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
 
-import ComponentList from '@/component/ComponentList.vue';
-import StyleguideComponent from '@/component/StyleguideComponent.vue';
+import ComponentList from '@/js/component/ComponentList.vue';
+import StyleguideComponent from '@/js/component/StyleguideComponent.vue';
 
 const localVue = createLocalVue();
 localVue.use(Vuex);

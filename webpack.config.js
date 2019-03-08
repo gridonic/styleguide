@@ -8,7 +8,7 @@ module.exports = extendConfig
         },
         css: {
             filename: 'styleguide.css',
-            extract: false,
+            extract: false, // Include css in resulting js file
         },
     })
     .forDevelopment({
@@ -24,6 +24,7 @@ module.exports = extendConfig
     })
     .forProduction({
         output: {
+            path: `${__dirname}/dist`,
             library: 'styleguide',
             libraryTarget: 'window',
         },

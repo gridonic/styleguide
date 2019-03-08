@@ -1,4 +1,4 @@
-import GlobalConfig from '@/service/GlobalConfig';
+import GlobalConfig from '@/js/service/GlobalConfig';
 
 describe('load global config', () => {
     it('returns config given in dom data attribute for styleguide', () => {

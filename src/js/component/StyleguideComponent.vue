@@ -1,13 +1,18 @@
 <template>
     <div class="styleguide-component">
-        <h2 class="name">
-            {{ name }}
-        </h2>
-        <div class="examples">
-            <h3 class="title">
+        <div class="information -typography-styleguide">
+            <h2 class="name">
+                {{ name }}
+            </h2>
+        </div>
+        <div class="exampletitle -typography-styleguide">
+            <h3>
                 Example
             </h3>
+        </div>
+        <div class="examples">
             <div
+                class="example"
                 v-for="example in examples"
                 :key="example"
             >
@@ -35,16 +40,22 @@ export default {
 
 <style lang="scss" scoped>
     .styleguide-component {
-        > .name {
-            margin: 0;
+        > .information {
+            > .name {
+                margin: 0;
+            }
+        }
+
+        > .exampletitle {
+            margin-top: 20px;
         }
 
         > .examples {
-            > .title {
-                text-transform: uppercase;
-                color: #E7E3D7;
-                font-weight: normal;
-            }
+            margin-top: 10px;
+
+            display: grid;
+            grid-auto-flow: row dense;
+            grid-gap: 15px;
         }
     }
 </style>
