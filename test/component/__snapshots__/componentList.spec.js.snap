@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComponentList renders the component 1`] = `"<div class=\\"component-list\\"><div class=\\"component\\"><styleguide-component-stub name=\\"Component A\\" examples=\\"\\"></styleguide-component-stub></div><div class=\\"component\\"><styleguide-component-stub name=\\"Component B\\" examples=\\"\\"></styleguide-component-stub></div><div class=\\"component\\"><styleguide-component-stub name=\\"Component C\\" examples=\\"\\"></styleguide-component-stub></div></div>"`;

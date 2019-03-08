@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyleguideComponent renders the component 1`] = `
+"<div class=\\"styleguide-component\\"><h2 class=\\"name\\">
+        Fancy Component
+    </h2> <div class=\\"examples\\"><h3 class=\\"title\\">
+            Example
+        </h3> </div></div>"
+`;
