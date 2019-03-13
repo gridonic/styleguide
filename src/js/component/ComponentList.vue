@@ -5,7 +5,10 @@
             :key="component.name"
             class="component"
         >
-            <styleguide-component v-bind="component" />
+            <styleguide-component
+                v-bind="component"
+                :iframe="meta.iframe"
+            />
         </div>
     </div>
 </template>
@@ -22,6 +25,7 @@ export default {
     computed: {
         ...mapGetters([
             'components',
+            'meta',
         ]),
     },
 };

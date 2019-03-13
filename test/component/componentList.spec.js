@@ -9,6 +9,9 @@ localVue.use(Vuex);
 
 const store = new Vuex.Store({
     getters: {
+        meta() {
+            return {};
+        },
         components() {
             return [
                 { name: 'Component A' },

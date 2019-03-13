@@ -33,7 +33,7 @@ export default {
     name: 'App',
     components: { ComponentList },
     store: new Vuex.Store(
-        new StyleguideStore(componentLoader),
+        new StyleguideStore(globalConfig, componentLoader),
     ),
     created() {
         this.load();

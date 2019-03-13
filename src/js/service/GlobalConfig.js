@@ -11,6 +11,13 @@ export default class GlobalConfig {
     }
 
     /**
+     * @return {Object}
+     */
+    get iframe() {
+        return this.config.iframe || null;
+    }
+
+    /**
      * @return {Array}
      */
     get components() {

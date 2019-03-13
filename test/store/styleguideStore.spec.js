@@ -18,6 +18,7 @@ ComponentLoader.mockImplementation(() => ({
 Vue.use(Vuex);
 
 const store = new Vuex.Store(new StyleguideStore(
+    null,
     new ComponentLoader(),
 ));
 

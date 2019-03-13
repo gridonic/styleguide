@@ -1,8 +1,10 @@
 export default class StyleguideStore {
     /**
+     * @param {GlobalConfig} globalConfig
      * @param {ComponentLoader} componentsLoader
      */
-    constructor(componentsLoader) {
+    constructor(globalConfig, componentsLoader) {
+        this.globalConfig = globalConfig;
         this.componentsLoader = componentsLoader;
     }
 
@@ -12,12 +14,16 @@ export default class StyleguideStore {
 
     get state() {
         return {
+            meta: {
+                iframe: this.globalConfig ? this.globalConfig.iframe : null,
+            },
             components: [],
         };
     }
 
     get getters() {
         return {
+            meta: state => state.meta,
             components: state => state.components,
         };
     }
