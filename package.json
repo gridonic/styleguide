@@ -1,6 +1,6 @@
 {
   "name": "@gridonic/styleguide",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custom interactive styleguide for our projects",
   "author": "Gridonic <hello@gridonic.ch>",
   "license": "MIT",
