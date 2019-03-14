@@ -1,5 +1,8 @@
 <template>
-    <div class="styleguide-component">
+    <div
+        :id="name"
+        class="styleguide-component"
+    >
         <div class="information -typography-styleguide">
             <h2 class="name">
                 {{ name }}
@@ -29,8 +32,6 @@
 </template>
 
 <script>
-import { iframeResizer } from 'iframe-resizer';
-
 function buildHead(styles, scripts) {
     const styleTags = styles.map(style => `<link rel="stylesheet" href="${style}">`);
 
@@ -66,8 +67,6 @@ export default {
 
                 const iframe = $example.querySelector('.frame');
                 iframe.src = `data:text/html;charset=utf-8,${escape(html)}`;
-
-                iframeResizer({}, iframe);
             }
         }
     },

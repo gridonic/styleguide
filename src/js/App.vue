@@ -6,7 +6,10 @@
                 src="@/images/logo.png"
             >
         </div>
-        <div class="sidebar" />
+        <navigation-sidebar
+            class="sidebar"
+            :components="components"
+        />
         <div class="content">
             <component-list />
         </div>
@@ -15,13 +18,14 @@
 
 <script>
 import Vue from 'vue';
-import Vuex, { mapActions } from 'vuex';
+import Vuex, { mapActions, mapGetters } from 'vuex';
 
 import ComponentLoader from '@/js/service/ComponentLoader';
 import DataFetcher from '@/js/service/DataFetcher';
 import GlobalConfig from '@/js/service/GlobalConfig';
 import StyleguideStore from '@/js/store/StyleguideStore';
 import ComponentList from '@/js/component/ComponentList';
+import NavigationSidebar from '@/js/component/NavigationSidebar';
 
 Vue.use(Vuex);
 
@@ -31,10 +35,18 @@ const componentLoader = new ComponentLoader(globalConfig, dataFetcher);
 
 export default {
     name: 'App',
-    components: { ComponentList },
+    components: {
+        ComponentList,
+        NavigationSidebar,
+    },
     store: new Vuex.Store(
         new StyleguideStore(globalConfig, componentLoader),
     ),
+    computed: {
+        ...mapGetters([
+            'components',
+        ]),
+    },
     created() {
         this.load();
     },
@@ -51,7 +63,7 @@ export default {
         display: grid;
         height: 100%;
 
-        grid-template-columns: 200px auto;
+        grid-template-columns: 250px auto;
         grid-template-rows: 80px auto;
 
         > .header {
